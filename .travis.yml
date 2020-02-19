@@ -7,7 +7,7 @@ before_install:
 
 
 script:
-    - docker run alekseevs/docker-react npm run test -- --coverage
+    - docker run alekseevs/docker-react npm run test -- --coverage CI=true
 
 deploy:
     provider: elasticbeanstalk
